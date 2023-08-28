@@ -1,0 +1,59 @@
+@import url("styles/header.css");
+@import url("styles/carrossel.css");
+
+:root {
+    --cor-do-fundo: #EBECEE;
+    --fundo-cabecalho: #FFFFFF;
+    --degrade-azul: linear-gradient(160deg, #002F52 0%, #326589 100%);
+    --cor-laranja: #EB9B00;
+    --fonte-principal: "Poppins";
+    --titulo-card: #002F52;
+    --texto--card: rgba(0, 0, 0, 0.85);
+}
+
+body {
+    background-color: var(--cor-do-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.banner {
+    font-size: 16px;
+    background: var(--degrade-azul);
+    color: var(--fundo-cabecalho);
+    padding: 2em;
+    text-align: center;
+}
+
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.banner__texto {
+    font-weight: 500;
+   margin: 1em 0em;
+   text-align: center;
+   line-height: 1.4em;
+}
+
+.container__pesquisa {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 3em;
+    color: var(--cor-do-fundo);
+    width: 100%;
+    display: inline-block;
+    padding: 1em;
+}
+
+.container__pesquisa::placeholder {
+    text-align: center;
+    color: var(--cor-do-fundo);
+    font-size: 14px;
+    font-weight: 400;
+    background: url(img/Pesquisa.svg) no-repeat;
+    background-size: contain;
+}
+
